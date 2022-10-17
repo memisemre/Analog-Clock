@@ -60,7 +60,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* margin-top:-155px; */
+    margin-top:-155px;
 }
 .clock-container .second-rod{
     position: absolute;
@@ -117,4 +117,3 @@ body{
 .clock-container .clock-value-eleven{
     --rotation--value: 330deg;
 }
-
