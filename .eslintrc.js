@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = { // eslint-disable-line
     "env": {
         "browser": true,
         "es2021": true
@@ -10,6 +10,8 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "rules": {
-    }
-}
+        "rules": {
+            "semi": ["error", "always"],
+            "quotes": ["error", "double"]
+        }
+};

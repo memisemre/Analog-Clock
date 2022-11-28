@@ -3,12 +3,8 @@
     padding: 0;
 }
 :root{
-    --body--background--color: #2C3639;
-    --clock--background--color: #334756;
-    --text--color: #EAF6F6;
-    --hour--rod--color: #CDC9C3;
-    --minute--rod--color: #FBF7F0;
-    --second-rod--color: #DDDDDD;
+    --body--background--color: #111111;
+    --color: #3877f2;
 }
 body{
     width: 100%;
@@ -19,20 +15,18 @@ body{
     background-color: var(--body--background--color);
 }
 .clock-container{
-    width: 1000px;
-    height: 1000px;
-    border: 15px solid black;
+    width: 800px;
+    height: 800px;
+    border: 15px solid var(--color);
     border-radius: 50%;
     position: relative;
-    background-color: var(--clock--background--color);
-    box-shadow: 0px 0px 150px 0px rgba(255,255,255,1);
 }
 .clock-container .center-dot{
     width: 85px;
     height: 85px;
     border-radius: 50%;
     position: absolute;
-    background-color: var(--text--color);
+    background-color: var(--color);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -57,10 +51,10 @@ body{
 .clock-container .hour-rod .stick{
     width: 20px;
     height: 170px;
-    background-color: var(--hour--rod--color);
+    background-color: var(--color);
 }
 .clock-container .hour-rod .arrow-head{
-    border-color: var(--hour--rod--color) transparent transparent transparent;
+    border-color: var(--color) transparent transparent transparent;
 }
 .clock-container .minute-rod{
     position: absolute;
@@ -73,10 +67,10 @@ body{
 .clock-container .minute-rod .stick{
     width: 20px;
     height: 220px;
-    background-color: var(--minute--rod--color);
+    background-color: var(--color);
 }
 .clock-container .minute-rod .arrow-head{
-    border-color: var(--minute--rod--color) transparent transparent transparent;
+    border-color: var(--color) transparent transparent transparent;
 }
 .clock-container .second-rod{
     position: absolute;
@@ -89,10 +83,10 @@ body{
 .clock-container .second-rod .stick {
     width: 20px;
     height: 300px;
-    background-color: var(--second-rod--color);
+    background-color: var(--color);
 }
 .clock-container .second-rod .arrow-head {
-    border-color: var(--second-rod--color) transparent transparent transparent;
+    border-color: var(--color) transparent transparent transparent;
 }
 .clock-container .clock-value{
     --rotation--value: 0;
@@ -103,7 +97,7 @@ body{
     transform: rotate(var(--rotation--value));
     font-size: 85px;
     font-weight: bold;
-    color: var(--text--color);
+    color: var(--color);
 }
 .clock-container .clock-value-one{
     --rotation--value: 30deg;
